@@ -1,0 +1,67 @@
+@import 'source/css/styleObnul';
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+/*****************************************************************************************/
+
+body{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	background-color: #010101;
+	color: #ffe2a8;
+}
+.title{
+	font-size: 40px;
+	font-weight: 600;
+}
+/*****************************************************************************************/
+.main__header{
+	position: relative;
+}
+.layers__content{
+	z-index: 1;	
+	transform: translate3d(0, calc(var(--scrollTop)/1.6),0);
+	font-weight: 900;
+	text-align: center;
+}
+.layers{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	position: relative;
+
+}
+.layer{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-size: cover;
+	background-position: center;
+	will-change: transform; 
+	// Нужно чтобы браузер выделял больше ресов на отслеживание вычислений
+	z-index: 2;
+}
+.layers__fon{
+	transform: translate3d(0, calc(var(--scrollTop)/1.6),0);
+	z-index: 0;
+}
+.layers__mid{
+		transform: translate3d(0, calc(var(--scrollTop)/3.5),0);
+}
+.layers__fron{
+		transform: translate3d(0, calc(var(--scrollTop)/7),0);
+}
+
+/*****************************************************************************************/
+.layers__fon {
+	
+}
+.layers__mid {
+
+}
+.layers__fron {
+
+}
+.main__article{
+	min-height: 100vh;
+}
